@@ -1,0 +1,13 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #e0f7fa, #fff);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.reservation-section {
+  background-color: #f8f9fa;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+}

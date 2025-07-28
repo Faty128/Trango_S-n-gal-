@@ -1,0 +1,23 @@
+.bus{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.seat {
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    /* transition: background-color 0.3s ease; */
+}
+.seat.selected {
+    background-color: green;
+}
