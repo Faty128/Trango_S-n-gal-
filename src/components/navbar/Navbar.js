@@ -33,7 +33,7 @@ function Navbar() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/historique" className="nav-link text-dark">
+            <Link to="/mestraget" className="nav-link text-dark">
               {("Mes trajets")}
             </Link>
           </li>

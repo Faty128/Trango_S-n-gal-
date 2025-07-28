@@ -6,3 +6,8 @@
 .seat-card:hover {
   transform: scale(1.05);
 }
+
+.seat-card.selected {
+  background-color: #00796b;
+  color: white;
+}

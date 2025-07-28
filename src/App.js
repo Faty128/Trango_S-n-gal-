@@ -6,6 +6,8 @@ import ReservationForm from "./components/reservationform/ReservationForm";
 import Navbar from "./components/navbar/Navbar";
 import Register from "./pages/auth/Register";
 import TicketCard from "./components/ticketcard/TicketCard";
+import RechercheTrajet from "./components/recherche/RechercheTrajet";
+import MesTraget from "./components/mestraget/MesTraget";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/reservationform" element={<ReservationForm />} />
           <Route path="/ticketcard" element={<TicketCard />} />
+          <Route path="/recherche" element={<RechercheTrajet />} />
+          <Route path="/mestraget" element={<MesTraget />} />
         </Routes>
       </Router>
     </div>
