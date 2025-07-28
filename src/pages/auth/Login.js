@@ -27,31 +27,8 @@ const Login = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    // try {
-    //   const userCredential = await auth.signInWithEmailAndPassword(email, password);
-    //   const user = userCredential.user;
-
-    //   // Récupérer le rôle de l'utilisateur depuis Firestore
-    //   const userDoc = await db.collection("users").doc(user.uid).get();
-    //   const userData = userDoc.data();
-
-    //   if (userData && userData.role === "coach") {
-    //     Navigate("/coachdashboard");
-    //     toast.success("Login successful! Welcome Coach.");
-    //   } else if (userData && userData.role === "student") {
-    //     Navigate("/etuduantdashboard");
-    //     toast.success("Login successful! Welcome Student.");
-    //   } else {
-    //     alert("Rôle utilisateur non défini");
-    //   }
-    // } catch (error) {
-    //   if (error.code === "auth/wrong-password") {
-    //     toast.error("Incorrect password. Please try again.");
-    //   } else {
-    //     toast.error(error.message);
-    //   }
-    //   console.error(error);
-    // }
+    setIsSigningIn(true);
+    setErrorMessage("");
   };
 
   return (
@@ -86,13 +63,13 @@ const Login = () => {
                 <p className="page-link">
                   <span className="page-link-label">Forgot Password?</span>
                 </p>
-                <Link to="/CoachDashboard">
+                <Link to="/acceuil">
                 <button className="form-btn" type="submit">Log in</button>
                 </Link>
               </form>
               <p className="sign-up-label">
                 Don't have an account?
-                <Link to="/" className="sign-up-link">Home</Link>
+                <Link to="/acceuil" className="sign-up-link">Home</Link>
               </p>
             </div>
             </div>

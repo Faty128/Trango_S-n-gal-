@@ -73,6 +73,7 @@
 }
 
 .form-btn {
+    width: 100%;
     background-color: #00796b;
     color: white;
     font-weight: 600;

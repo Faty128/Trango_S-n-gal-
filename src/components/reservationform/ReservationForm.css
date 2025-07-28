@@ -1,0 +1,8 @@
+.seat-card {
+  cursor: default;
+  transition: transform 0.2s ease;
+}
+
+.seat-card:hover {
+  transform: scale(1.05);
+}
