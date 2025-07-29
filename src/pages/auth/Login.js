@@ -77,8 +77,8 @@ const Login = () => {
                 </form>
                 <p className="sign-up-label">
                   Don't have an account?
-                  <Link to="/acceuil" className="sign-up-link">
-                    Home
+                  <Link to="/register" className="sign-up-link">
+                    S'inscrir
                   </Link>
                 </p>
               </div>
