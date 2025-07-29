@@ -8,6 +8,7 @@ import Register from "./pages/auth/Register";
 import TicketCard from "./components/ticketcard/TicketCard";
 import RechercheTrajet from "./components/recherche/RechercheTrajet";
 import MesTraget from "./components/mestraget/MesTraget";
+import ForgotPassword from "./pages/auth/ForgotPassword";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/acceuil" element={<Acceuil />} />
           <Route path="/" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/forgot-password" element={<ForgotPassword/>} />
           <Route path="/reservationform" element={<ReservationForm />} />
           <Route path="/ticketcard" element={<TicketCard />} />
           <Route path="/recherche" element={<RechercheTrajet />} />
